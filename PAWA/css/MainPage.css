@@ -1,0 +1,42 @@
+﻿@import url('MainPage.css');
+body {
+    margin: auto;
+    height: auto;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color:beige;
+}
+
+header {
+    top: 0px;
+    text-align: center;
+    color: darkorchid;
+    font-weight: bolder;
+    font-size: 50px;
+    margin: auto;
+    padding: 10px 0;
+}
+
+.menu-item {
+    color: dimgray;
+    font-size: 25px;
+    font-style: italic;
+    font-weight: bolder;
+    text-decoration: none;
+    padding: 10px;
+    background-color: lightgray;
+    width: auto;
+    height: auto;
+    border: groove;
+    border-block: solid;
+}
+
+#footer {
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    bottom: 0px;
+    background-color: lightgray;
+    padding-top: 5px;
+}

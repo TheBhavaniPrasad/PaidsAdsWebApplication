@@ -1,0 +1,118 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+    background-image: url('../Images/gym.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.h1 {
+    font-size: 60px;
+    top: 0px;
+    text-align: center;
+    color:white;
+    font-weight: bolder;
+    margin: auto;
+    padding: 10px 0;
+    font-style:italic;
+}
+section{
+    background-repeat:no-repeat;
+    background-size:cover;
+    width:100vw;
+    height:100vh;
+    display:flex;
+    align-items:flex-end;
+    justify-content:center;
+}
+img{
+    width:250vw;
+    height:250vh;
+}
+.container{
+    width:100vw;
+    height:100vh;
+    position:absolute;
+    top:0;right:0;bottom:0;left:0;
+    display:flex;
+    justify-content:center;
+}
+.inner{
+    margin-top:22vh;
+    width:28vw;
+    height:41vh;
+    text-align:center;
+    background-color:rgba(251, 251, 251, 0.41)
+}
+#lbllogin{
+    font-size:3vw;
+    font-family: 'Anton', sans-serif;
+    color:coral;
+    border-bottom:2px solid black;
+    padding:0% 5% 0% 5%;
+}
+
+.lblstyle{
+     font-size:2vw;
+    font-family: 'Righteous', cursive;
+    color:rebeccapurple;
+}
+.txtstyle{
+    width:20vw;
+    height:4vh;
+    border:0px;
+    font-size:2vw;
+    background-color:transparent;
+    border-bottom:2px solid black;
+    padding-top:1vh;
+    padding-left:2vw;
+    font-family: 'Passion One', cursive;
+}
+#Button1{
+    width:20vw;
+    height:8vh;
+    border:0px;
+    background-color:transparent;
+    font-size:3vw;
+    font-family: 'Boogaloo', cursive;
+    background-color:rgba(245, 241, 241, 0.64);
+    color:dodgerblue;
+    border-radius:15%;
+}
+.animated {
+    animation-duration: 1s;
+    animation-fill-mode: both
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translate3d(0,-100%,0)
+    }
+
+    to {
+        opacity: 1;
+        transform: none
+    }
+}
+
+.fadeInDown {
+    animation-name: fadeInDown
+}
+
+@keyframes fadeInUpBig {
+    0% {
+        opacity: 0;
+        transform: translate3d(0,2000px,0)
+    }
+
+    to {
+        opacity: 1;
+        transform: none
+    }
+}
+
+.fadeInUpBig {
+    animation-name: fadeInUpBig
+}

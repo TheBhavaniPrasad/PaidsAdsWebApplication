@@ -1,0 +1,103 @@
+﻿body {
+    margin: auto;
+    height: 100vh;
+    background-image: url('../Images/new6.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-y:auto;
+}
+
+header {
+    margin-top:10%;
+    position:center;
+    top: 0px;
+    text-align: center;
+    color: blue;
+    font-weight: bolder;
+    font-style: initial;
+    font-family: 'Microsoft Sans Serif' ;
+    font-size: 30px;
+    margin: auto;
+    padding: 10px 0;
+}
+
+.btn {
+    float: right;
+    margin-top: -40px;
+    margin-right:4%;
+}
+
+#btnLogout {
+    font-size: 15px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    padding: 5px;
+    color: #fff;
+    background-color: #b200ff;
+    border: none;
+    border-radius: 5px;
+    margin-left:100px;
+}
+#btnLogout:hover {
+    background-color:lightseagreen;
+}
+
+#btnLogout:active {
+    background-color: #3e8e41;
+    transform: translateY(4px);
+}
+
+    .menu ul {
+        list-style: none;
+    }
+
+        .menu ul li {
+            background-color: lightgrey;
+            border: 1px solid black;
+            width: 250px;
+            height: 35px;
+            line-height: 35px;
+            text-align: center;
+            float: left;
+            position: relative;
+            border-radius: 5px;
+        }
+
+            .menu ul li a {
+                text-decoration: none;
+                color: #b200ff;
+                display: block;
+                font-weight: bolder;
+                font-size:20px;
+               
+            }
+            .menu ul li ul li {
+                text-align:left;
+            }
+
+            .menu ul li a:hover {
+                background-color: lightblue;
+                border-radius: 5px;
+                color: black;
+            }
+
+        .menu ul ul {
+            position: absolute;
+            display: none;
+            margin-left: -41px;
+        }
+
+        .menu ul li:hover > ul {
+            display: block;
+        }
+
+#footer {
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    bottom: 0px;
+    background-color: lightseagreen;
+    padding-top: 5px;
+    font-weight: bold;
+}

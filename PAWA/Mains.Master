@@ -1,0 +1,86 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Mains.master.cs"
+ Inherits="PAWA.Mains" %>
+
+<!DOCTYPE html>
+
+<html>
+    <head runat="server">
+        <link href="css/Main.css" rel="stylesheet" />
+         <title>
+         </title>
+   <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
+        </head>       
+<body CssClass="body" >
+    <form id="form1" runat="server">
+        <header cssclass="header">PAID ADS WEB APPLICATION</header>
+        <table class="btn">
+            <tr>
+                <td>
+                    <asp:Label ID="LblDateTime" runat="server" ></asp:Label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <asp:Label ID="lbltext" runat="server" Text="Hello User"></asp:Label>
+                </td>
+                <td>
+                    <asp:Button ID="BtnLogout" runat="server" CssClass="btn"  Text="Logout" OnClick="BtnLogout_Click" PostBackUrl="~/Login.aspx"></asp:Button></td>
+            </tr>
+        </table>
+        <main>
+            <div class="menu">
+                <ul>
+                    <li><a href="#">Admin</a>
+                        <ul>
+                            <li><a href="../Admin/Role.aspx">Role</a></li>
+                            <li><a href="../Admin/UpdateFormaspx.aspx">Regsitration Form</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Masters</a>
+                        <ul>
+                            <li><a href="../Master/CategoryDetail.aspx">CategoryDetails</a></li>
+                            <li><a href="../Master/SubCategory.aspx">SubCategoryDetails</a></li>
+                            <li><a href="../Master/AddItem.aspx">AddItem</a></li>
+                            <li><a href="../Master/CustDetails.aspx">CustomerDetails</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="#">Transactions</a>
+                         <ul> 
+                            <li><a href="../Transactions/AdBooking.aspx">AdBooking</a></li>
+                            <li><a href="../Transactions/PaymentDetails.aspx">PaymentDetails</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Reports</a>
+                        <ul>
+                            <li><a href="../Reports/RoleReports.aspx">RoleReport</a></li>
+                            <li><a href="../Reports/UserReport.aspx">UserReport</a></li>
+                            <li><a href="../Reports/CategoryReport.aspx">CategoryReport</a></li>
+                             <li><a href="../Reports/SubCategoryDetails.aspx">SubCategoryReport</a></li>
+                            <li><a href="../Reports/ItemReport.aspx">ItemReport</a></li>
+                            <li><a href="../Reports/CustomerReport.aspx">CustomerReport</a></li>
+                            <li><a href="../Reports/AdBookingReport.aspx">AdBookingReport</a></li>
+                            <li><a href="../Reports/PaymentReport.aspx">PaymentReport</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <footer id="footer">
+                <p>All rights reserved Copy rights@ 2023</p>
+            </footer>
+        </main>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                </asp:ContentPlaceHolder>
+        </div>
+    </form> 
+</body>
+</html>
+
